@@ -9,7 +9,7 @@ class PostController extends Controller
 {
     public function actionIndex(): string
     {
-        $posts = Post::find() -> all();
+        $posts = Post::find()-> all();
         return $this->render('index', compact('posts'));
     }
 }
