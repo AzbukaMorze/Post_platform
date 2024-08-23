@@ -76,6 +76,7 @@ $this->title = Yii::$app->name;
 <!--            <a class="page-numbers" href="#">4</a>-->
 <!--            <a class="page-numbers" href="#">5</a>-->
 <!--            <a class="page-numbers" href="#"><i class="fa fa-angle-right" aria-hidden="true"></i></a>-->
-<!--        </div>-->
+<!--        -->
+        </div>
     </div>
 </section>
