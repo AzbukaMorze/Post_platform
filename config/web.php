@@ -53,12 +53,14 @@ $config = [
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
+
             'rules' => [
                 'page/<page:\d+>' => 'post/index',
                 '/' => 'post/index',
                 'post/<id:\d+>' => 'post/view',
                 'category/<alias:[a-zA-Z0-9-]+>' => 'category/view',
             ],
+
         ],
     ],
     'params' => $params,
