@@ -33,11 +33,11 @@ AppAsset::register($this);
                     <div class="col-md-10">
                         <div class="menu">
                             <ul>
-                                <li class="active"><a href="#">Home</a></li>
-                                <li><a href="#">lifestyle</a></li>
-                                <li><a href="#">Food</a></li>
-                                <li><a href="#">Nature</a></li>
-                                <li><a href="#">photography</a></li>
+                                <li class="active"><?= Html::a('Home', ['/']) ?></li>
+                                <li><?= Html::a('Lifestyle', ['/category/lifestyle']) ?></li>
+                                <li><?= Html::a('Travel', ['/category/travel']) ?></li>
+                                <li><?= Html::a('Health-Wellness', ['/category/health-wellness']) ?></li>
+                                <li><?= Html::a('Technology', ['/category/technology']) ?></li>
                             </ul>
                         </div>
                     </div>
