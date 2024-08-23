@@ -24,7 +24,7 @@ $this->title = Yii::$app->name;
                 <div class="col-md-12">
                     <div class="single-post-big">
                         <div class="big-image">
-                            <img src="img/post-image1.jpg" alt="">
+                            <img src="/img/post-image1.jpg" alt="">
                         </div>
                         <div class="big-text">
                             <h3><a href="#">Post Title Goes Here.</a></h3>
@@ -37,7 +37,7 @@ $this->title = Yii::$app->name;
                 </div>
                 <div class="col-md-3">
                     <div class="single-post">
-                        <img src="img/post-image2.jpg" alt="">
+                        <img src="/img/post-image2.jpg" alt="">
                         <h3><a href="#">Post Title Goes Here.</a></h3>
                         <h4><span>Posted By: <span class="author-name">Kabbo Liate</span></span>
                         </h4>
@@ -47,7 +47,7 @@ $this->title = Yii::$app->name;
                 </div>
                 <div class="col-md-3">
                     <div class="single-post">
-                        <img src="img/post-image3.jpg" alt="">
+                        <img src="/img/post-image3.jpg" alt="">
                         <h3><a href="#">Post Title Goes Here.</a></h3>
                         <h4><span>Posted By: <span class="author-name">Kabbo Liate</span></span>
                         </h4>
@@ -57,7 +57,7 @@ $this->title = Yii::$app->name;
                 </div>
                 <div class="col-md-3">
                     <div class="single-post">
-                        <img src="img/post-image4.jpg" alt="">
+                        <img src="/img/post-image4.jpg" alt="">
                         <h3><a href="#">Post Title Goes Here.</a></h3>
                         <h4><span>Posted By: <span class="author-name">Kabbo Liate</span></span>
                         </h4>
@@ -67,7 +67,7 @@ $this->title = Yii::$app->name;
                 </div>
                 <div class="col-md-3">
                     <div class="single-post">
-                        <img src="img/post-image5.jpg" alt="">
+                        <img src="/img/post-image5.jpg" alt="">
                         <h3><a href="#">Post Title Goes Here.</a></h3>
                         <h4><span>Posted By: <span class="author-name">Kabbo Liate</span></span>
                         </h4>
@@ -77,7 +77,7 @@ $this->title = Yii::$app->name;
                 </div>
                 <div class="col-md-3">
                     <div class="single-post">
-                        <img src="img/post-image6.jpg" alt="">
+                        <img src="/img/post-image6.jpg" alt="">
                         <h3><a href="#">Post Title Goes Here.</a></h3>
                         <h4><span>Posted By: <span class="author-name">Kabbo Liate</span></span>
                         </h4>
