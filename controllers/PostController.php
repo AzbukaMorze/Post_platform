@@ -5,6 +5,7 @@ namespace app\controllers;
 use app\models\Post;
 use yii\data\Pagination;
 use yii\web\Controller;
+use yii\web\NotFoundHttpException;
 
 class PostController extends Controller
 {
@@ -26,6 +27,16 @@ class PostController extends Controller
                 'pages'
             )
         );
+    }
+    public function actionView($id): string
+    {
+        $post = Post::findOne($id);
+
+        if ($post === null) {
+            throw new NotFoundHttpException('Пост не найден.');
+        }
+        
+        return $this->render('post', compact('post'));
     }
 
 }
