@@ -3,7 +3,8 @@
 namespace app\models;
 
 use yii\db\ActiveRecord;
-use yii\helpers\Inflector;
+use yii\behaviors\TimestampBehavior;
+use yii\db\Expression;
 
 class Post extends ActiveRecord
 {
@@ -14,5 +15,16 @@ class Post extends ActiveRecord
     public function getCategory(): \yii\db\ActiveQuery
     {
         return $this->hasOne(Category::class, ['id' => 'category_id']);
+    }
+    public function behaviors()
+    {
+        return [
+            [
+                'class' => TimestampBehavior::class,
+                'attributes' => [
+                    ActiveRecord::EVENT_BEFORE_INSERT => ['created_at'],
+                ],
+            ],
+        ];
     }
 }
