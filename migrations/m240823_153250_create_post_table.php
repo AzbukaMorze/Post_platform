@@ -22,7 +22,7 @@ class m240823_153250_create_post_table extends Migration
             'created_at' => $this->dateTime()->notNull(),
             'keywords' => $this->string(255)->null(),
             'description' => $this->string(255)->null(),
-        ]);
+        ], 'CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci');
 
         // Создание индекса для поля category_id
         $this->createIndex(

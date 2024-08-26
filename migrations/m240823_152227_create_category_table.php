@@ -16,7 +16,7 @@ class m240823_152227_create_category_table extends Migration
             'id' => $this->primaryKey()->unsigned()->notNull()->append('AUTO_INCREMENT'),
             'title' => $this->string(255)->notNull(),
             'alias' => $this->string(255)->notNull(),
-        ]);
+        ], 'CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci');
 
         // Создание индекса для поля "alias"
         $this->createIndex(
