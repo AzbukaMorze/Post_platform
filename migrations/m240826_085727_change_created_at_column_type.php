@@ -27,11 +27,13 @@ class m240826_085727_change_created_at_column_type extends Migration
      */
     public function safeDown()
     {
-        $this->addColumn('post', 'created_at', $this->datetime()->notNull());
+        $this->addColumn('post', 'created_at_temp', $this->string(20)->notNull());
 
-        $this->execute('UPDATE post SET created_at = FROM_UNIXTIME(created_at)');
+        $this->execute('UPDATE post SET created_at_temp = FROM_UNIXTIME(created_at)');
 
-        $this->dropColumn('post', 'created_at_temp');
+        $this->dropColumn('post', 'created_at');
+
+        $this->renameColumn('post', 'created_at_temp', 'created_at');
     }
 
     /*
